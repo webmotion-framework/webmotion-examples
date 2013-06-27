@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
  * @author julien
  */
 public class TestMainController extends WebMotionTestNG {
-    
+        
     @Test
     public void test() throws Exception {
         String result = createRequest("/").Get()
