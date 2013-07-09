@@ -1,0 +1,8 @@
+[config]
+package.base=org.debux.webmotion.firefly
+
+[filters]
+*         /*                                        Firefly.cors
+
+[actions]
+*         /remote/console                           Firefly.console
