@@ -13,4 +13,6 @@ var _console = function(message) {
 
 console.error = _console;
 console.log = _console;
-window.onerror = _console;
+window.onerror = function(msg, url, line) {
+    _console(msg + " " + url + ":" + line);
+};
