@@ -4,8 +4,8 @@
         <meta charset="utf-8">
         <title>UploadMotion</title>
 
-        <script src="http://twitter.github.com/bootstrap/assets/js/jquery.js"></script>
-        <link href="http://twitter.github.io/bootstrap/assets/css/bootstrap.css" rel="stylesheet">
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.2/css/bootstrap.css">
         
         <style type="text/css">
             html,
@@ -23,6 +23,7 @@
         </style>
         
         <script>
+            var url = "http://localhost:8084/uploadmotion";
             $(function() {
                 $("#send").click(function () {
                     var xhr = jQuery.ajaxSettings.xhr();
@@ -41,7 +42,7 @@
 
                     $.ajax({
                         type: 'POST',
-                        url: 'http://localhost:9080/uploadmotion/upload',
+                        url: url + '/upload',
                         cache: false,
                         contentType: false,
                         processData: false,
@@ -51,8 +52,8 @@
                             $("#progress").css("width", "100%");
                             $("#progress").addClass("bar-success");
 
-                            $("#preview").attr("src", "http://localhost:9080/uploadmotion/download?token=" + data.token);
-                            $("#share").val("http://localhost:9080/uploadmotion/download?token=" + data.token);
+                            $("#preview").attr("src", url + "/download?token=" + data.token);
+                            $("#share").val(url + "/download?token=" + data.token);
                         },
                         error: function () {
                             console.log("error:");
