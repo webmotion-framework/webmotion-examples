@@ -5,7 +5,7 @@
         <title>PollMotion</title>
 
         <!-- Le styles -->
-        <link href="http://twitter.github.com/bootstrap/assets/css/bootstrap.css" rel="stylesheet">
+        <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.2/css/bootstrap.css">
         <style type="text/css">
             body {
                 padding-top: 20px;
@@ -43,21 +43,8 @@
                 margin-top: 28px;
             }
         </style>
-        <link href="http://twitter.github.com/bootstrap/assets/css/bootstrap-responsive.css" rel="stylesheet">
-
-        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-        <!--[if lt IE 9]>
-          <script src="http://twitter.github.com/bootstrap/assets/js/html5shiv.js"></script>
-        <![endif]-->
-
-        <!-- Fav and touch icons -->
-        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-144-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-114-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-72-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-57-precomposed.png">
-        <link rel="shortcut icon" href="http://twitter.github.com/bootstrap/assets/ico/favicon.png">
-        
-        <script src="http://twitter.github.com/bootstrap/assets/js/jquery.js"></script>
+        <link href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.2/css/bootstrap-responsive.css" rel="stylesheet">
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
         <sitemesh:write property='head'/>
     </head>
 
@@ -66,7 +53,7 @@
             
             <div class="masthead">
                 <ul class="nav nav-pills pull-right">
-                    <li class="active"><a href="./index">Home</a></li>
+                    <li class="active"><a href="/pollmotion/index">Home</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
@@ -78,24 +65,9 @@
             <hr>
 
             <div class="footer">
-                <p>&copy; WebMotion 2013</p>
+                <p>&copy; WebMotion 2014</p>
             </div>
 
         </div>
-
-        <!-- Placed at the end of the document so the pages load faster -->
-        <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-transition.js"></script>
-        <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-alert.js"></script>
-        <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-modal.js"></script>
-        <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-dropdown.js"></script>
-        <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-scrollspy.js"></script>
-        <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-tab.js"></script>
-        <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-tooltip.js"></script>
-        <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-popover.js"></script>
-        <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-button.js"></script>
-        <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-collapse.js"></script>
-        <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-carousel.js"></script>
-        <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-typeahead.js"></script>
-
     </body>
 </html>
